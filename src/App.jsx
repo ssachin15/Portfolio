@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Waves } from './components/Waves'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* Background Waves Component */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Waves strokeColor="#333333" backgroundColor="#000000" />
@@ -28,7 +28,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
