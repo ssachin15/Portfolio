@@ -28,6 +28,7 @@ const Projects = () => {
           'ETH-PROOF-Beginner-EVM-assessment',
           'ETH-PROOF-Beginner-EVM-Course-assessment',
           'java-script-assessment.test',
+          'java-script-assessment',
           'ssachin15'
         ].includes(repo.name))
         setProjects(filtered)
@@ -40,6 +41,7 @@ const Projects = () => {
           'ETH-PROOF-Beginner-EVM-assessment',
           'ETH-PROOF-Beginner-EVM-Course-assessment',
           'java-script-assessment.test',
+          'java-script-assessment',
           'ssachin15'
         ].includes(repo.name))
         setProjects(fallbackFiltered)
