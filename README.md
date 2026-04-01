@@ -1,16 +1,60 @@
-# React + Vite
+# Sachin Singh - Personal Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dynamic, and fully responsive personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion. This project elegantly showcases my skills, development experience, and dynamically fetches live projects directly from GitHub.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern Dark UI:** A stunning, premium dark-mode aesthetic featuring carefully selected colors, glowing gradients, and glassmorphism.
+- **Interactive Backgrounds:** Custom-built interactive `<Waves />` background component powered by `simplex-noise` running at 60fps on a mathematical SVG canvas that perfectly tracks the user's mouse.
+- **Fluid Animations:** Sleek entrance reveals and scroll-based motion choreography backed by Framer Motion.
+- **Live GitHub Integration:** The **Projects** tab dynamically fetches repositories from the live GitHub API, featuring an automatic fallback to local JSON data to gracefully handle API rate limiting.
+- **Fully Responsive:** Meticulously engineered to adapt seamlessly across mobile devices, tablets, and high-resolution desktops.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/) & [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Mathematical Graphics:** `simplex-noise` for organic real-time noise rendering
+- **Routing:** React Router DOM
 
-## Expanding the ESLint configuration
+## 📂 Project Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/pages/` - Core pages encompassing the `Home`, `About`, `Projects`, `Skills`, `Contact`, and `NotFound` router paths.
+- `src/components/` - Global, reusable UI pieces (e.g. `Waves`, `Navbar`, `HeroGeometric`).
+- `src/data/` - Static snapshot data serving to protect the UI from rendering errors when GitHub API rate thresholds are exceeded.
+
+## 💻 Running Locally
+
+To get a local copy up and running, follow these simple steps.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ssachin15/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies:**
+   Make sure you have Node installed, then run:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📬 Contact Me
+
+- **GitHub:** [@ssachin15](https://github.com/ssachin15)
+
+---
+*Built with ❤️ by Sachin Singh*
