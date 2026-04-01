@@ -28,9 +28,10 @@ export function Header() {
       </div>
 
       {/* Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-12 md:pt-16">
+      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-14 md:pt-16">
         <nav className={cn(
-          "flex items-center gap-4 px-6 py-3",
+          "flex items-center gap-1 sm:gap-4 px-2 sm:px-6 py-2 sm:py-3",
+          "max-w-[95vw] overflow-x-auto [&::-webkit-scrollbar]:hidden",
           "rounded-xl border border-white/[0.1]",
           "bg-white/[0.05] backdrop-blur-lg",
           "shadow-lg"
@@ -41,7 +42,7 @@ export function Header() {
               to={link.href}
               className={({ isActive }) =>
                 cn(
-                  "px-5 py-2 rounded-full text-sm font-medium transition-all duration-300",
+                  "px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-[13px] sm:text-sm font-medium transition-all duration-300 whitespace-nowrap",
 
                   isActive
                     ? "bg-gradient-to-r from-indigo-500/30 to-rose-500/30 text-white border border-indigo-400/40 hover:shadow-[0_0_15px_rgba(99,102,241,0.3)]"
